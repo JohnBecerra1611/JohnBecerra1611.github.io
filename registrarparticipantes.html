@@ -1,0 +1,79 @@
+<!--Define que el documento esta bajo el estandar de HTML 5 -->
+<!doctype html>
+<!--Representa la raíz de un documento HTML. Todos los demás elementos deben ser descendientes de este elemento. -->
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title> Rogistro de carrera </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/registro.css">
+    <style type="text/css">
+    </style>
+</head>
+
+<header>
+    <nav class="fixed-top" id="mainNav">
+        <div id="padre" class="container">
+            <div class="logo">
+                <input id="newutcchido" type="image" src="img/utcalvillo.edu.mx.png" />
+                <p id="redes">
+                    <a href="https://www.facebook.com/UTCalvillo/" target="_blank"><img id="iconoderedes"
+                            src="https://www.utcalvillo.edu.mx/img/logos_redes/facebook.png" alt="facebook"
+                            class="imagen-redessociales" /></a>
+                    <a href="https://twitter.com/UtCalvillo?lang=es" target="_blank"><img id="iconoderedes"
+                            src="https://www.utcalvillo.edu.mx/img/logos_redes/twitter.png" alt="twitter"
+                            class="imagen-redessociales" /></a>
+                    <a href="https://www.instagram.com/ut.calvillo/" target="_blank"><img id="iconoderedes"
+                            src="https://www.utcalvillo.edu.mx/img/logos_redes/instagram.png" alt="instagram"
+                            class="imagen-redessociales" /></a>
+                    <a href="https://www.youtube.com/channel/UCopo_s1NMNZyd3s5N2W8Wwg" target="_blank"><img
+                            id="iconoderedes" src="https://www.utcalvillo.edu.mx/img/logos_redes/youtube.png"
+                            alt="youtube" class="imagen-redessociales" /></a>
+                </p>
+            </div>
+
+        </div>
+
+    </nav>
+</header>
+
+<body>
+
+    <div id="contenedor">
+        <div id="contenedorcentrado">
+            <div id="login">
+                <form action="insertar.php" method="post" class="formulario">
+                    <div class="titulo">
+                        <h1>Bienvenido</h1>
+                    </div>
+                    <a class="contenedor"></a>
+                    <div class="input-contenedor">
+                        <input type="text" placeholder="ID" name="ID" required>
+                    </div>
+                    <div class="input-contenedor">
+                        <input type="text" placeholder="Nombre del Coche" name="nombre_coche" required>
+                    </div>
+                    <div class="input-contenedor">
+                        <input type="text" placeholder="Puntuacion" name="puntuacion" required>
+
+                    </div>
+                    <div class="input-contenedor">
+                        <input type="text" placeholder="Universidad" name="universidad" required>
+
+                    </div>
+                    <div class="input-contenedor">
+                        <input type="submit" class="button" value="Registrar coche" name="btnregistrar"
+                            href="grafico.php">
+                        <p> <br><a class="link" id="inicioboton" href="evento_carrito.html">« Inicio</a></p>
+                        <br>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

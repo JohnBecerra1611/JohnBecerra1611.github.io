@@ -1,0 +1,46 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  .columns {
+    display: flex;
+  }
+  #principal{
+    background: #eee;
+    border: 3px solid #ccc;
+    flex: 1;
+    padding: 30px;
+  }
+  #middle {
+    background: #eee;
+    border: 3px solid #ccc;
+    flex: 1;
+    padding: 30px;
+    
+  }
+  #petite{
+    background: #eee;
+    border: 3px solid #ccc;
+    flex: 1;
+    padding: 3px;
+  }
+  
+  .center {
+   align-items: center;
+  }
+  
+  .main-column {
+    flex: 1;
+  }
+
+
+  #rector{
+    margin: auto;
+    width: 300px;
+    height: 290px;
+  }
+  #utcmejorestado{
+    margin: auto;
+    width: 300px;
+    height: 310px;
+  }

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
+    </script>
+
+    <link href="css/banner.css" rel="stylesheet" />
+    <link href="css/barraizq.css" rel="stylesheet" />
+    <link href="css/calendar.css" rel="stylesheet" />
+    <link href="css/menudenavegacion.css" rel="stylesheet" />
+
+    <title>EventosUTC</title>
+    <!--export para el footer-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.utcalvillo.edu.mx/css/default/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.utcalvillo.edu.mx/css/default/styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.utcalvillo.edu.mx/css/default/m-styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
+</head>
+
+<header>
+    <nav class="fixed-top" id="mainNav">
+        <div id="padre" class="container">
+            <div class="logo">
+
+
+                <input id="rasgadura1" type="image" src="img/rasgadura2.png" />
+                <input id="newutcchido" type="image" src="img/utcalvillo.edu.mx.png" />
+
+
+                <p id="redes">
+                    <a href="https://www.facebook.com/UTCalvillo/" target="_blank"><img id="iconoderedes"
+                            src="https://www.utcalvillo.edu.mx/img/logos_redes/facebook.png" alt="facebook"
+                            class="imagen-redessociales" /></a>
+                    <a href="https://twitter.com/UtCalvillo?lang=es" target="_blank"><img id="iconoderedes"
+                            src="https://www.utcalvillo.edu.mx/img/logos_redes/twitter.png" alt="twitter"
+                            class="imagen-redessociales" /></a>
+                    <a href="https://www.instagram.com/ut.calvillo/" target="_blank"><img id="iconoderedes"
+                            src="https://www.utcalvillo.edu.mx/img/logos_redes/instagram.png" alt="instagram"
+                            class="imagen-redessociales" /></a>
+                    <a href="https://www.youtube.com/channel/UCopo_s1NMNZyd3s5N2W8Wwg" target="_blank"><img
+                            id="iconoderedes" src="https://www.utcalvillo.edu.mx/img/logos_redes/youtube.png"
+                            alt="youtube" class="imagen-redessociales" /></a>
+                </p>
+            </div>
+
+        </div>
+
+    </nav>
+</header>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <ul id="menu">
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="https://www.utcalvillo.edu.mx/">UTCalvillo</a></li>
+            <li><a href="http://miescuela.utcalvillo.edu.mx/">Mi Escuela</a></li>
+            <li><a href="http://moodle.utcalvillo.edu.mx/">Moodle</a></li>
+            <li><a href="https://app.saeko.io/">Saeko</a></li>
+            <li><a href="https://www.utcalvillo.edu.mx/inicio/menu/normateca">Normateca</a></li>
+            <li><a href="https://www.utcalvillo.edu.mx/inicio/menu/contacto">Contacto</a></li>
+            <li><a href="https://www.utcalvillo.edu.mx/documentacion/index/becas">Becas</a></li>
+            <li><a href="organigrama.html">Organigrama</a></li>
+            <li><a href="oferta_educativa.html">Oferta educativa</a></li>
+
+        </ul>
+    </div>
+    <br>
+
+    <!--extras-->
+    <aside id="listaizquierda">
+        <div listaizquierdaclass="list-group">
+            <a id="colorextras" class="list-group-item list-group-item-action">
+                <h5>Extras</h5>
+            </a>
+            <div class="list-group">
+                <a href="iniciarsecion.html" id="botonizquierda" class="list-group-item list-group-item-action">Iniciar
+                    sesion</a>
+                <a href="registro.html" id="botonizquierda"
+                    class="list-group-item list-group-item-action">Registrarse</a>
+                <a href="logout.php" id="botonizquierda" class="list-group-item list-group-item-action">Salir de tu
+                    cuenta</a>
+                <a href="registrarparticipantes.html" id="botonizquierda" class="list-group-item list-group-item-action">Registrarte para la carrera</a>
+                <a href="grafico.php" id="botonizquierda" class="list-group-item list-group-item-action">Ver resultados de la carreara</a>
+                <br>
+                <div class="root">
+                    <div class="calendar" id="calendar">
+                    </div>
+                </div>
+                <script type="text/javascript"
+                    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+                <script type="text/javascript"
+                    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+                <script type="text/javascript" src="js/calendar.js"></script>
+                <script type="text/javascript">
+                    let calendar = new Calendar('calendar');
+                    calendar.getElement().addEventListener('change', e => {
+                        console.log(calendar.value().format('LLL'));
+                    });
+                </script>
+                <a href="eventos.html" id="botonizquierda" class="list-group-item list-group-item-action">Eventos</a>
+            </div>
+        </div>
+    </aside>
+    </hr>
+
+    <section id="section">
+
+        <div class="clearfix">
+            <img src="img/convocatoria carritos.jpeg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+
+
+            <dip class="container">
+                <h1 id="Titulo_Azul" id="margen_evento_de_carritos">Carrera De Carros a Control Remoto</h1>
+                <p>
+                    La Universidad Tecnológica de Calvillo, a través de la presente convocatoria
+                    &nbsp;&nbsp;&nbsp;&nbsp;invita a los
+                    &nbsp;&nbsp;&nbsp;&nbsp; alumnos entre 4to y 6to. cuatrimestre de las carreras de Tecnologías de la
+                    &nbsp;&nbsp;&nbsp;&nbsp;Información o
+                    &nbsp;&nbsp;afines, de las Universidades Tecnológicas y Politécnicas en el estado de
+                    Aguascalientes a
+                    &nbsp;&nbsp;&nbsp;&nbsp;participar en la 1er Carrera Interescolar de Robótica El cual consistirá en
+                    &nbsp;lo siguiente:
+                </p>
+
+
+
+                <div class="col-8">
+                    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                        class="scrollspy-example-2" tabindex="0">
+                        <div id="OBJETIVO" id="margen_evento_de_carritos">
+                            <h4>OBJETIVO</h4>
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;El alumno desarrollara y creara soluciones de IoT (Internet of
+                                Things) mediante la
+                                &nbsp;&nbsp;&nbsp;&nbsp;manipulación de componentes electrónicos y de sistemas, un carro
+                                a control remoto y
+                                &nbsp;&nbsp;&nbsp;&nbsp;una aplicación móvil que pueda interconectarse con este.</p>
+                        </div>
+                        <div class="col-8">
+                            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                                class="scrollspy-example-2" tabindex="0">
+                                <div id="PARTICIPANTES" id="margen_evento_de_carritos">
+                                    <h5>PARTICIPANTES</h5>
+                                    <left>
+                                        <p>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;Estudiantes de Tecnologías de la Información o
+                                            Ingeniería en Sistemas de
+                                            &nbsp;&nbsp;&nbsp;&nbsp;las Universidades Tecnológicas y Politécnicas en el
+                                            estado:
+                                            <br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            • Universidad Tecnológica de Aguascalientes.
+                                            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            • Universidad Tecnológica del Retoño.
+                                            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            • Universidad Tecnológica del Norte de Aguascalientes.
+                                            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            • Universidad Tecnológica Metropolitana de Aguascalientes.
+                                            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            • Universidad Politécnica de Aguascalientes.
+                                            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            • Universidad Tecnológica de Calvillo.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <br><br><br>
+                <section id="section">
+                    <br>
+                    <hr>
+                    <div class="clearfix">
+                        <img src="img/robot.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+
+                        <div class="col-8">
+                            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                                class="scrollspy-example-2" tabindex="0">
+                                <div id="LINEAMIENTOS" id="margen_evento_de_carritos">
+                                    <h5>LINEAMIENTOS</h5>
+                                    <p>
+                                        &nbsp;&nbsp;• Deberán de crearse equipos de 4 integrantes los cuales deberán de
+                                        realizar un registro previo.
+                                        <br>
+                                        &nbsp;&nbsp;• Los participantes tienen que pertenecer a cualquiera de las 6
+                                        instituciones mencionadas anteriormente.
+                                        <br>
+                                        &nbsp;&nbsp;• Los equipos tienen que estar formados solo por integrantes de la
+                                        misma universidad.
+                                        <br>
+                                        &nbsp;&nbsp;• Los integrantes necesitan pertenecer a la carrera de Tecnologías
+                                        de la Información o a fin.
+                                        <br>
+                                        &nbsp;&nbsp;• Los equipos tendrán que presentar la solución de IoT de un carro a
+                                        control remoto creado por
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;ellos, utilizando los materiales mencionados en la
+                                        presente convocatoria.
+                                        <br>
+                                        &nbsp;&nbsp;• Cada equipo tendrá que desarrollar una aplicación móvil en la
+                                        plataforma de Android Studio,
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;la cual servirá de control remoto del carro.
+                                        <br>
+                                        &nbsp;&nbsp;• La aplicación deberá de conectarse al carro y este por consecuente
+                                        a Arduino para poder hacer
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;la manipulación e interacción del producto.
+                                        <br>
+                                        &nbsp;&nbsp;• El día de la presentación se realizará una carrera de obstáculos
+                                        con los carros de los equipos
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp; participantes.
+                                        <br>
+                                        &nbsp;&nbsp;• Los equipos tendrán que acudir a la Universidad Tecnológica de
+                                        Calvillo el día 8 de diciembre
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp; del presente año.
+                                        <br>
+                                        &nbsp;&nbsp;• La evaluación y premiación se explican en puntos dentro de la
+                                        convocatoria.
+                                    </p>
+                                </div>
+
+                                <div class="col-8">
+                                    <div data-bs-spy="scroll" data-bs-target="#navbar-example3"
+                                        data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                                        <div id="LINEAMIENTOS_TÉCNICOS" id="margen_evento_de_carritos">
+                                            <h4>LINEAMIENTOS TÉCNICOS</h4>
+                                            <p>Carro: tendrán que utilizar los siguientes materiales o similares:
+                                                <br>
+                                                • Protoboard
+                                                <br>
+                                                • Arduino/Nano Arduino o placa SP32
+                                                <br>
+                                                • Puente H
+                                                <br>
+                                                • Modulo Bluetooth HC-06
+                                                <br>
+                                                • Cables de conexión
+                                                <br>
+                                                • 2 motorreductores de 1.5 kg de fuerza, 100 RPM 3-12Vdc
+                                                <br>
+                                                • 2 llantas para motorreductores
+                                                <br>
+                                                • Baterías de ION Litio
+                                                <br>
+                                                • 1 Rueda loca
+                                                <br>
+                                                • Cables de conexión jumper
+                                                <br>
+                                                • Chasis para carro
+                                                <br><br>
+                                                Aplicación móvil: tendrán que cumplir con los siguientes requerimientos.
+                                                <br>
+                                                • Diseño de la aplicación mediante XML
+                                                <br>
+                                                • Aplicación de Modelo Vista Controlador (MVC)
+                                                <br>
+                                                • Uso de IDE Android Studio
+                                                <br>
+                                                • Lenguaje de programación mediante Java
+                                                <br>
+                                                • Aplicación responsiva
+                                                <br>
+                                                • La aplicación tendrá que estar ejecutándose directamente en un
+                                                dispositivo inteligente
+                                            </p>
+                                        </div>
+                                        </hr>
+                </section>
+
+                <section id="section">
+                    <hr>
+                    <div class="clearfix">
+                        <img src="img/codificacion.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+
+                        <div class="col-8">
+                            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                                class="scrollspy-example-2" tabindex="0">
+                                <div id="EVALUACIÓN" id="margen_evento_de_carritos">
+                                    <h4>EVALUACIÓN</h4>
+                                    <p>• Las soluciones IoT serán evaluadas por un jurado calificador neutro con
+                                        experiencia en el área.
+                                        <br>
+                                        • Los jueces evaluaran lo siguiente:
+                                        <br><br>
+                                        &nbsp;&nbsp; o Diseño del carro
+                                        <br>
+                                        &nbsp;&nbsp; o Programación de los componentes electrónicos
+                                        <br>
+                                        &nbsp;&nbsp; o Diseño y funcionalidad de la aplicación móvil
+                                        <br>
+                                        &nbsp;&nbsp; o Conectividad entre el carro, la aplicación y Arduino
+                                        <br>
+                                        &nbsp;&nbsp; o Calidad y experiencia de usuario
+                                        <br>
+                                        &nbsp;&nbsp; o Resultado de la carrera
+                                        <br><br>
+                                        • La calificación final será el promedio del jurado y esta será inapelable.
+                                    </p>
+                                </div>
+                                <div class="col-8">
+                                    <div data-bs-spy="scroll" data-bs-target="#navbar-example3"
+                                        data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                                        <div id="PREMIOS" id="margen_evento_de_carritos">
+                                            <h5>PREMIOS</h5>
+                                            <p>• 1er lugar: $4,000.00
+                                                <br>
+                                                • 2do lugar: $3,000.00
+                                                <br>
+                                                • 3er lugar: $2,000.00
+                                                <br>
+                                                • Premiación: 8 de diciembre al finalizar la evaluación.
+                                            </p>
+                                        </div>
+                                        <div class="col-8">
+                                            <div data-bs-spy="scroll" data-bs-target="#navbar-example3"
+                                                data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                                                <div id="BASES_GENERALES" id="margen_evento_de_carritos">
+                                                    <h5>BASES GENERALES</h5>
+                                                    <p>• Cada equipo deberá de realizar su registro en el link:<a
+                                                            href=" https://forms.gle/TMJFtFRz8eQeNtFfA" target="_blank">
+                                                            https://forms.gle/TMJFtFRz8eQeNtFfA</a>
+                                                        <br>
+                                                        • El concurso se llevará a cabo el día 8 de diciembre de 2022 en
+                                                        las instalaciones de la Universidad Tecnológica de Calvillo, en
+                                                        el edificio XXV Aniversario, en un horario de 9:00 a 13:00
+                                                        horas.
+                                                        <br>
+                                                        • El jurado tendrá 30 minutos para realizar la evaluación una
+                                                        vez terminado el evento.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </hr>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <footer>
+                    <div class="row justify-content-center "
+                        style="border-bottom: 1px gray solid; border-top: 1px gray solid; padding-top: 20px;">
+                        <div class="col-lg-8">
+                            <div class="row justify-content-center ">
+                                <div class="col-lg text-center p-3">
+                                    <a href="http://sistemas.utcalvillo.edu.mx/ContraloriaSocial/" target="_blank"> <img
+                                            src="https://www.utcalvillo.edu.mx/img/logos_externos/contraloria_social.png"
+                                            height="70px"></a>
+                                </div>
+                                <div class="col-lg text-center p-3">
+                                    <a href="https://drive.google.com/drive/folders/1cCweLYcwjSSoaE9dV8XGWTv8m_ICflyl"
+                                        target="_blank"> <img
+                                            src="https://www.utcalvillo.edu.mx/img/logos_externos/sgc.png"></a>
+                                </div>
+                                <!-- <div class="col-lg text-center p-3">
+                        <a href="https://redinags.org.mx/revista.php" target="_blank"> <img src="https://www.utcalvillo.edu.mx/img/logos_externos/redinags.png"></a>
+                   </div>-->
+                                <div class="col-lg text-center p-3">
+                                    <a href="http://sistemas.utcalvillo.edu.mx/SisBuzonDigital/" target="_blank"> <img
+                                            src="https://www.utcalvillo.edu.mx/img/logos_externos/buzon.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center p-4 infoextra">
+                        <div class="col-lg-10">
+                            <div class="row justify-content-center ">
+                                <div class="col-lg ">
+                                    <p class="add">CARRETERA AL TEPETATE, NO.102 COL. EL SALITRE, C.P. 20860,<br>
+                                        CALVILLO, AGUASCALIENTES</p>
+                                    <p class="tels"> <img src="img/phone-alt-solid.svg" style="width:20px;">&nbsp;
+                                        <a href="tel:4959565063">4959565063</a>
+                                        /
+                                        <a href="tel:4959565064">4959565064</a>
+                                        /
+                                        <a href="tel:4959565359">4959565359</a>
+                                    </p>
+                                    <br>
+                                    <h6>¡Síguenos en nuestras Redes¡</h6>
+                                    <p id="message">
+                                        <a href="https://www.facebook.com/UTCalvillo/" target="_blank"><img
+                                                src="https://www.utcalvillo.edu.mx/img/logos_redes/facebook.png"
+                                                alt="facebook" width="60px;" class="imagen-redessociales" /></a>
+                                        <a href="https://twitter.com/UtCalvillo?lang=es" target="_blank"><img
+                                                src="https://www.utcalvillo.edu.mx/img/logos_redes/twitter.png"
+                                                alt="twitter" width="60px;" class="imagen-redessociales" /></a>
+                                        <a href="https://www.instagram.com/ut.calvillo/" target="_blank"><img
+                                                src="https://www.utcalvillo.edu.mx/img/logos_redes/instagram.png"
+                                                alt="instagram" width="60px;" class="imagen-redessociales" /></a>
+                                        <a href="https://www.youtube.com/channel/UCopo_s1NMNZyd3s5N2W8Wwg"
+                                            target="_blank"><img
+                                                src="https://www.utcalvillo.edu.mx/img/logos_redes/youtube.png"
+                                                alt="youtube" width="60px;" class="imagen-redessociales" /></a>
+                                    </p>
+                                </div>
+                                <div class="col-lg-auto text-left ">
+                                    <h6 style="border-bottom: 1px solid #ffffff;">Avisos de Privacidad:</h6>
+                                    <ul>
+                                        <li><a href="/usermedia/avisos_privacidad/aviso_privacidad_integral_general.pdf"
+                                                title="" target="_blank">Integral General</a></li>
+                                        <li><a href="/usermedia/avisos_privacidad/aviso_privacidad_recursos_humanos.pdf"
+                                                title="" target="_blank">Integral para Recursos Humanos</a></li>
+                                        <li><a href="/usermedia/avisos_privacidad/aviso_privacidad_servicios_proveedores.pdf"
+                                                title="" target="_blank">Integral para Servicios y Provedores</a></li>
+                                    </ul>
+                                    <br>
+                                    <a href="/usermedia/otros/PROTOCOLO Y MEDIDAS DE PREVENCION_UT CALVILLO.pdf"
+                                        target="_blank" class="float-right">
+                                        <img src="img/head-side-mask-solid.svg" style="color:#ffffff; width:30px;">
+                                        <h6>Medidas COVID-19</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </footer>
+        </div>
+        <div class="modal_" id="modal_">
+
+        </div>
+        <script src="https://www.utcalvillo.edu.mx/js/jquery-3.5.1.min.js"></script>
+        <script src="https://www.utcalvillo.edu.mx/js/swiper-bundle.min.js"></script>
+        <script src="https://www.utcalvillo.edu.mx/js/local.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                $.get("/inicio/banner/", function (html) {
+                    $("#modal_").empty();
+                    $(html).appendTo('#modal_').modal();
+                });
+            });
+        </script>
+</body>
+
+</html>

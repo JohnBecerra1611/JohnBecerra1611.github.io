@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Registro </title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/banner.css" />
+</head>
+
+<header>
+    <nav class="fixed-top" id="mainNav">
+        <div id="padre" class="container">
+            <div class="logo">
+                <input id="newutcchido" type="image" src="img/utcalvillo.edu.mx.png" />
+                <p id="redes">
+                    <a href="https://www.facebook.com/UTCalvillo/" target="_blank"><img id="iconoderedes"
+                            src="https://www.utcalvillo.edu.mx/img/logos_redes/facebook.png" alt="facebook"
+                            class="imagen-redessociales" /></a>
+                    <a href="https://twitter.com/UtCalvillo?lang=es" target="_blank"><img id="iconoderedes"
+                            src="https://www.utcalvillo.edu.mx/img/logos_redes/twitter.png" alt="twitter"
+                            class="imagen-redessociales" /></a>
+                    <a href="https://www.instagram.com/ut.calvillo/" target="_blank"><img id="iconoderedes"
+                            src="https://www.utcalvillo.edu.mx/img/logos_redes/instagram.png" alt="instagram"
+                            class="imagen-redessociales" /></a>
+                    <a href="https://www.youtube.com/channel/UCopo_s1NMNZyd3s5N2W8Wwg" target="_blank"><img
+                            id="iconoderedes" src="https://www.utcalvillo.edu.mx/img/logos_redes/youtube.png"
+                            alt="youtube" class="imagen-redessociales" /></a>
+                </p>
+            </div>
+
+        </div>
+
+    </nav>
+</header>
+
+<body>
+    <form class="formulario" method="post" action="login_registrar.php">
+        <h1>Registrate</h1>
+        <a class="contenedor">
+            <div class="input-contenedor">
+                <i class="fas fa-user icon"></i>
+                <input type="text" placeholder="USUARIO" name="usuario" required>
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-user icon"></i>
+                <input type="text" placeholder="NOMBRE" name="nombre" required>
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-user icon"></i>
+                <input type="text" placeholder="APELLIDO" name="apellidos" required>
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" placeholder="CORREO" name="correo" required>
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <input type="password" placeholder="CONTRASEÑA" name="pass" required>
+            </div>
+            <input class="button" type="submit" value="Registrar" name="btnregistrar">
+        </a>
+        <p>¿Ya tienes una cuenta?<a href="iniciarsecion.html"> Iniciar Sesion</a></p>
+        </div>
+        </div>
+    </form>
+</body>
+
+</html>

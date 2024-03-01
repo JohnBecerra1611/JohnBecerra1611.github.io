@@ -1,0 +1,41 @@
+body {
+    font-family: arial, helvetica;
+    background: #e8e8e8;
+}
+
+/*margen del contenedor*/
+
+#menuuno {
+    display: flex;
+    justify-content: center;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    background: #055372;
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*letras*/
+#menu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 17px;
+    display: block;
+}
+
+#menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+/*al seleccionar*/
+#menu li a:hover {
+    background: #95D950;
+}

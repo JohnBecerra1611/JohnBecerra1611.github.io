@@ -1,0 +1,36 @@
+
+p,
+dt {
+   
+    font-weight: bold;
+  
+}
+
+dl,
+dd {
+    font-size: .9rem;
+    
+}
+
+dd {
+    margin-bottom: 1em;
+}
+
+.container{
+    margin: auto;
+}
+#listadeeventos{    
+    text-shadow: 1px 1px #fff;
+}
+#justificarderechaeventos{
+    padding-left: 450px;
+    
+}
+#justificarderechafecha{
+    padding-left: 250px;
+
+}
+#justificarderecha{
+    padding-left: 280px;
+
+}

@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+.logo {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rasgadura1{
+    height: 130px;;
+    width:650px;
+   
+    justify-content: center;
+    align-items: center;
+}
+#newutcchido{
+    height:130px;
+    width:430px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+#redes {
+    position: absolute;
+    height: 1px;
+    right: 10px;
+    display: flex;
+    justify-content: right;
+
+}
+
+#iconoderedes {
+    height: 30px;
+}
+
+/*esta parte representa el fondo negro que aparece en la parte de arriva*/
+/*https://mybrandnewlogo.com/color-gradient-generator*/
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-image: linear-gradient(35deg, #f0c649 0, #e1cb49 5.56%, #d1d04c 11.11%, #c0d552 16.67%, #afd95b 22.22%, #9cdc65 27.78%, #87e072 33.33%, #6fe280 38.89%, #52e48f 44.44%, #1fe69f 50%, #00e7b0 55.56%, #00e8c1 61.11%, #00e9d2 66.67%, #00e9e3 72.22%, #00e9f3 77.78%, #00e8ff 83.33%, #00e7ff 88.89%, #00e5ff 94.44%, #00e3ff 100%);
+    background-image: linear-gradient(35deg, #ddcd49 0, #cdd14d 6.25%, #bdd654 12.5%, #abda5c 18.75%, #99dd67 25%, #84e073 31.25%, #6de281 37.5%, #50e490 43.75%, #1fe69f 50%, #00e7af 56.25%, #00e8c0 62.5%, #00e9d0 68.75%, #00e9e1 75%, #00e9f1 81.25%, #00e8ff 87.5%, #00e7ff 93.75%, #00e6ff 100%);
+}
